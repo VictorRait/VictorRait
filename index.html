@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a9d85c29ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+  </head>
+  <main>
+    <header>
+      <nav id="navbar">
+        <ul class="nav-list">
+          <li class="nav-link"><a href="#welcome-section">About</a></li>
+          <li class="nav-link"><a href="#projects">Works</a></li>
+          <li class="nav-link"><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body>
+      <section
+        id="welcome-section"
+        style="background-image: url(steve-johnson-H6fVgYvb7Ro-unsplash.jpg)"
+      >
+        <img
+          style="max-width: 200px"
+          ="animate"
+          src="sdsd.png"
+          alt="profile pic"
+        />
+        <h1 class="animate">Hi! I'm Victor Rait</h1>
+        <p class="movingText">a self-taught web developer</p>
+      </section>
+      <section
+        id="projects"
+        style="background-image: url(gaddafi-rusli-2ueUnL4CkV8-unsplash.jpg)"
+      >
+        <h2 class="project-section-header movingText">
+          These are some of my projects!
+        </h2>
+
+        <div class="project-grid">
+          <div class="wrapper">
+            <div class="project-tile">
+              <a
+                target="_blank"
+                class="project"
+                href="https://victorrait.github.io/placeholder-page"
+              >
+                <img
+                  class="project-image"
+                  src="placeholder_thmbnl.png"
+                  alt="placeholder_product_loading_page"
+              /></a>
+            </div>
+            <p class="project-title">Product Landing Page</p>
+          </div>
+          <div class="wrapper">
+            <div class="project-tile">
+              <a
+                target="_blank"
+                class="project"
+                href="https://victorrait.github.io/Technical-Documentation-Page/"
+              >
+                <img
+                  class="project-image"
+                  src="thumbnail.png"
+                  alt="Technical_Documentation_Page"
+                />
+              </a>
+            </div>
+            <p class="project-title">Technical Documentation Page</p>
+          </div>
+          <div class="wrapper">
+            <div class="project-tile">
+              <a
+                target="_blank"
+                class="project"
+                href="https://victorrait.github.io/Survey-Form/"
+              >
+                <img
+                  class="project-image"
+                  src="Survey tmbnl.png"
+                  alt="Survey_Form"
+                />
+              </a>
+            </div>
+            <p class="project-title">Survey Form</p>
+          </div>
+          <div class="wrapper">
+            <div class="project-tile">
+              <a
+                target="_blank"
+                class="project"
+                href="https://victorrait.github.io/Product-Preview-Page/"
+              >
+                <img
+                  class="project-image"
+                  src="product_preview_page.png"
+                  alt="Product_Preview_Page"
+              /></a>
+            </div>
+            <p class="project-title">Product Preview Page</p>
+          </div>
+        </div>
+
+        <a href="https://github.com/VictorRait" class="btn">
+          <p>Learn More</p>
+          <i class="fa-solid fa-angles-right"></i>
+        </a>
+      </section>
+
+      <section id="contacts">
+        <div class="contacts-header">
+          <h2 class="bounce">Hello!</h2>
+          <h2>let's work together...</h2>
+        </div>
+        <p>Want to contact me?</p>
+        <ul>
+          <li class="btn">
+            <a
+              class="profile-link"
+              href="https://web.facebook.com/people/Victor-Rait/100009931088027/?refsrc=deprecated&_rdc=11&_rdr"
+              ><i class="fa-brands fa-square-facebook"></i> Facebook</a
+            >
+          </li>
+
+          <li class="btn">
+            <a
+              class="profile-link"
+              type="Email"
+              href="mailto:victorlemuelrait@gmail.com"
+              ><i class="fa-regular fa-envelope"></i> Email</a
+            >
+          </li>
+          <li class="btn">
+            <a class="profile-link" href="https://github.com/VictorRait"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+          </li>
+        </ul>
+      </section>
+    </body>
+  </main>
+  <footer>
+    <p>
+      Created for
+      <a href="https://www.freecodecamp.org/Victor_Rait"
+        >freecodecamp <i class="fab fa-free-code-camp"></i
+      ></a>
+    </p>
+  </footer>
+  <script>
+    const movingTexts = document.querySelectorAll(".movingText");
+    movingTexts.forEach((movingText) => {
+      movingText.addEventListener("mouseover", () => {
+        movingText.classList.add("move");
+      });
+    });
+
+    const project_image = document.querySelectorAll(".project-image");
+    const textTitle = document.querySelectorAll(".project-title");
+    project_image.forEach((title) => {
+      title.addEventListener("mouseover", () => {
+        textTitle.classList.add("appear");
+        console.log("alert");
+      });
+    });
+  </script>
+</html>
